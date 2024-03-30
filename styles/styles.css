@@ -1,7 +1,14 @@
+@import "fonts.css";
+@import "normalize.css";
+
 :root {
     color-scheme: dark;
     --primary-color: #efefef;
     --secondary-color: #121212;
+}
+
+html {
+    font-family: "Montserrat";
 }
 
 body {
