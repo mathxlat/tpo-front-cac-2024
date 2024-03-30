@@ -1,0 +1,15 @@
+:root {
+    color-scheme: dark;
+    --primary-color: #efefef;
+    --secondary-color: #121212;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.movies__title {
+    font-size: 2em;
+    font-weight: 900;
+}
