@@ -32,6 +32,11 @@ body {
     margin: auto;
 }
 
+.header__logo {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
 .header__nav {
     display: flex;
     flex-direction: row-reverse;
@@ -116,6 +121,19 @@ body {
         padding: 5px;
         font-size: .8em;
         font-weight: 600;
+        transition: filter .1s;
+    }
+
+    .header__nav-link:hover {
+        filter: drop-shadow(0 0 1px var(--primary-color));
+    }
+
+    .header__nav-user {
+        transition: filter .1s;
+    }
+
+    .header__nav-user:hover {
+        filter: drop-shadow(0 0 1px var(--primary-color));
     }
 }
 
