@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Cine</title>
 </head>
 <body>
-    <h1 class="movies__title">GODZILLA X KONG EL NUEVO IMPERIO</h1>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo-container">
+                <h1 class="header__logo">CINE</h1>
+            </div>
+            <nav class="header__nav">
+                <input type="checkbox" id="menu-button" />
+                <label
+                    for="menu-button"
+                    class="menu-button"
+                    role="button"
+                    aria-label="Alternar menu"
+                >
+                    <i class="menu-hamburger" aria-label="Menu"></i>
+                </label>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#premiere" class="header__nav-link">
+                            Estrenos
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#coming-soon" class="header__nav-link">
+                            Próximamente
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#cinemas" class="header__nav-link">
+                            Cines
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#shop" class="header__nav-link">
+                            Tienda
+                        </a>
+                    </li>
+                </ul>
+                <a href="#user" class="header__nav-user">
+                    <img src="./assets/icons/circle-user.svg" alt="Usuario" aria-label="Usuario" />
+                </a>
+            </nav>
+        </div>
+    </header>
+    <h2 class="movies__title">Godzilla x</h2>
 </body>
 </html>
