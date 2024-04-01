@@ -155,8 +155,8 @@ body:has(#toggle-menu:checked) {
         filter: drop-shadow(0 0 1px var(--primary-color));
     }
 
-    .header:has(#toggle-menu:checked) {
-        position: static;
+    body:has(#toggle-menu:checked) {
+        overflow: auto;
     }
 }
 
