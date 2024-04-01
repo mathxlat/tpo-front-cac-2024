@@ -44,21 +44,21 @@ body {
     gap: 20px;
 }
 
-#menu-button {
+#toggle-menu {
     display: none;
 }
 
-.menu-button {
+.toggle-menu-button {
     display: flex;
     justify-content: end;
     width: 21px;
 }
 
-.menu-hamburger::before {
+.toggle-menu-hamburger::before {
     content: url("../assets/icons/menu.svg");
 }
 
-#menu-button:checked ~ .menu-button > .menu-hamburger::before {
+#toggle-menu:checked ~ .toggle-menu-button > .toggle-menu-hamburger::before {
     content: url("../assets/icons/x-mark.svg");
 }
 
@@ -86,7 +86,7 @@ body {
     text-transform: uppercase;
 }
 
-#menu-button:checked ~ .header__nav-list {
+#toggle-menu:checked ~ .header__nav-list {
     display: flex;
 }
 
@@ -101,7 +101,7 @@ body {
         justify-content: space-between;
     }
 
-    .menu-hamburger {
+    .toggle-menu-hamburger {
         display: none;
     }
 
