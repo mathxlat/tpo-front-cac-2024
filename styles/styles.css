@@ -71,9 +71,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
     opacity: 0;
 }
@@ -89,6 +89,10 @@ body {
 #toggle-menu:checked ~ .header__nav-list {
     opacity: 1;
     display: flex;
+}
+
+body:has(#toggle-menu:checked) {
+    overflow: hidden;
 }
 
 @starting-style {
@@ -149,6 +153,10 @@ body {
 
     .header__nav-user:hover {
         filter: drop-shadow(0 0 1px var(--primary-color));
+    }
+
+    .header:has(#toggle-menu:checked) {
+        position: static;
     }
 }
 
