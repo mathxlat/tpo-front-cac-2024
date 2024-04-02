@@ -44,7 +44,7 @@ body {
     gap: 20px;
 }
 
-#toggle-menu {
+.toggle-menu {
     display: none;
 }
 
@@ -58,7 +58,7 @@ body {
     content: url("../assets/icons/menu.svg");
 }
 
-#toggle-menu:checked ~ .toggle-menu-button > .toggle-menu-hamburger::before {
+.toggle-menu:checked ~ .toggle-menu-button > .toggle-menu-hamburger::before {
     content: url("../assets/icons/x-mark.svg");
 }
 
@@ -86,17 +86,17 @@ body {
     text-transform: uppercase;
 }
 
-#toggle-menu:checked ~ .header__nav-list {
+.toggle-menu:checked ~ .header__nav-list {
     opacity: 1;
     display: flex;
 }
 
-body:has(#toggle-menu:checked) {
+body:has(.toggle-menu:checked) {
     overflow: hidden;
 }
 
 @starting-style {
-    #toggle-menu:checked ~ .header__nav-list {
+    .toggle-menu:checked ~ .header__nav-list {
         opacity: 0;
     }
 }
@@ -155,7 +155,7 @@ body:has(#toggle-menu:checked) {
         filter: drop-shadow(0 0 1px var(--primary-color));
     }
 
-    body:has(#toggle-menu:checked) {
+    body:has(.toggle-menu:checked) {
         overflow: auto;
     }
 }
