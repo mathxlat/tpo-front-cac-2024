@@ -186,6 +186,7 @@ body:has(.toggle-menu:checked) {
 .main__slider-picture {
     flex: 0 0 100%;
     left: 0;
+    scroll-snap-stop: always;
     scroll-snap-align: center;
 }
 
