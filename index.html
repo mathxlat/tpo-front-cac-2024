@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Cine</title>
-</head>
-<body>
-    <header class="header">
-        <div class="header__wrapper">
-            <a href="#" class="header__logo-container">
-                <h1 class="header__logo">CINE</h1>
-            </a>
-            <nav class="header__nav">
-                <input type="checkbox" id="toggle-menu" class="toggle-menu" />
-                <label
-                    for="toggle-menu"
-                    class="toggle-menu-button"
-                    role="button"
-                    aria-label="Alternar menu"
-                >
-                    <i class="toggle-menu-hamburger" aria-label="Menu"></i>
-                </label>
-                <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="#premiere" class="header__nav-link">
-                            Estrenos
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#coming-soon" class="header__nav-link">
-                            Próximamente
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#cinemas" class="header__nav-link">
-                            Cines
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#shop" class="header__nav-link">
-                            Tienda
-                        </a>
-                    </li>
-                </ul>
-                <a href="#user" class="header__nav-user">
-                    <img src="./assets/icons/circle-user.svg" alt="Usuario" aria-label="Usuario" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Cine</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__wrapper">
+                <a href="#" class="header__logo-container">
+                    <h1 class="header__logo">CINE</h1>
                 </a>
-            </nav>
-        </div>
-    </header>
-    <main class="main-content">
-        <section class="main__hero">
-            <img src="" alt="Hero Image" class="main__hero-image">
-        </section>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-        <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
-    </main>
-</body>
+                <nav class="header__nav">
+                    <input
+                        type="checkbox"
+                        id="toggle-menu"
+                        class="toggle-menu"
+                    />
+                    <label
+                        for="toggle-menu"
+                        class="toggle-menu-button"
+                        role="button"
+                        aria-label="Alternar menu"
+                    >
+                        <i class="toggle-menu-hamburger" aria-label="Menu"></i>
+                    </label>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#premiere" class="header__nav-link">
+                                Estrenos
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#coming-soon" class="header__nav-link">
+                                Próximamente
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#cinemas" class="header__nav-link">
+                                Cines
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#shop" class="header__nav-link">
+                                Tienda
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#user" class="header__nav-user">
+                        <img
+                            src="./assets/icons/circle-user.svg"
+                            alt="Usuario"
+                            aria-label="Usuario"
+                        />
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="main__hero">
+                <picture>
+                    <source
+                        srcset="assets/img/hero/godzilla-x-kong-mobile.webp"
+                        media="(max-width: 600px)"
+                    />
+                    <img
+                        src="assets/img/hero/godzilla-x-kong.webp"
+                        alt="Hero Image"
+                        class="main__hero-img"
+                    />
+                </picture>
+            </section>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+            <h2 class="movies__title">Godzilla x Kong El nuevo imperio</h2>
+        </main>
+    </body>
 </html>

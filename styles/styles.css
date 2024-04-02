@@ -164,6 +164,16 @@ body:has(.toggle-menu:checked) {
     margin: auto;
 }
 
+.main__hero {
+    width: 100%;
+    height: auto;
+}
+
+.main__hero-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .movies__title {
     font-size: 2em;
     font-weight: 900;
