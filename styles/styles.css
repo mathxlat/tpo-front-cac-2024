@@ -159,19 +159,39 @@ body:has(.toggle-menu:checked) {
 }
 
 .main-content {
+    width: 100%;
     padding: 0 10px;
     max-width: 1024px;
     margin: auto;
 }
 
-.main__hero {
+.main__slider-content {
     width: 100%;
-    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    overflow: scroll;
+    gap: 4px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--secondary-color);
+    scrollbar-arrow-color: var(--secondary-color);
 }
 
-.main__hero-img {
+.main__slider-picture {
+    flex: 0 0 100%;
+    left: 0;
+    scroll-snap-align: center;
+}
+
+.main__slider-img {
     width: 100%;
-    border-radius: 5px;
+    object-fit: cover;
 }
 
 .movies__title {
