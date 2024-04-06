@@ -145,6 +145,10 @@ body:has(.toggle-menu:checked) {
         filter: drop-shadow(0 0 1px var(--primary-color));
     }
 
+    .footer__nav-link:hover {
+        filter: drop-shadow(0 0 1px var(--primary-color));
+    }
+
     .header__nav-user {
         transition: filter .1s;
     }
@@ -152,6 +156,7 @@ body:has(.toggle-menu:checked) {
     .header__nav-user:hover {
         filter: drop-shadow(0 0 1px var(--primary-color));
     }
+
 
     body:has(.toggle-menu:checked) {
         overflow: auto;
@@ -266,3 +271,40 @@ body:has(.toggle-menu:checked) {
     overflow: hidden; 
     text-overflow: ellipsis; 
 }
+
+.footer {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.footer__border-top {
+    margin-top: 30px;
+    border-top: 1px solid #0009;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+    padding: 20px 0;
+}
+
+.footer__logo {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer__nav-link {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
