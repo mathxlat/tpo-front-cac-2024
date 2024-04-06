@@ -204,7 +204,7 @@ body:has(.toggle-menu:checked) {
 
 .card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 10px;
     margin: auto;
     padding: 10px 0;
@@ -251,14 +251,14 @@ body:has(.toggle-menu:checked) {
 
 .card-title {
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 600;
     text-shadow: 0 0 10px #0009;
     padding: 2px 0;
 }
 
 .card-description {
-    font-size: 0.7em;
+    font-size: 0.8em;
     text-shadow: 0 0 10px #0009;
     display: -webkit-box; 
     -webkit-box-orient: vertical; 
