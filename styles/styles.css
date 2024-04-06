@@ -201,7 +201,7 @@ body:has(.toggle-menu:checked) {
 }
 
 .main__movies-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 800;
     text-transform: uppercase;
     margin: 20px 0 0 0;
