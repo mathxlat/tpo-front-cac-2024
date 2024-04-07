@@ -142,7 +142,11 @@ body:has(.toggle-menu:checked) {
     }
 
     .header__nav-link:hover {
-        filter: drop-shadow(0 0 1px var(--primary-color));
+        filter: brightness(150%);
+    }
+
+    .footer__nav-link {
+        transition: filter .1s;
     }
 
     .footer__nav-link:hover {
@@ -154,7 +158,7 @@ body:has(.toggle-menu:checked) {
     }
 
     .header__nav-user:hover {
-        filter: drop-shadow(0 0 1px var(--primary-color));
+        filter: brightness(150%);
     }
 
 
