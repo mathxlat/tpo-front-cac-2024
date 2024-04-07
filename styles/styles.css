@@ -146,7 +146,7 @@ body:has(.toggle-menu:checked) {
     }
 
     .footer__nav-link:hover {
-        filter: drop-shadow(0 0 1px var(--primary-color));
+        filter: brightness(150%);
     }
 
     .header__nav-user {
@@ -290,6 +290,7 @@ body:has(.toggle-menu:checked) {
     justify-content: space-between;
     align-items: first baseline;
     padding: 20px 0;
+    gap: 8px;
 }
 
 .footer__logo {
@@ -300,11 +301,17 @@ body:has(.toggle-menu:checked) {
 .footer__nav-list {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
 }
 
 .footer__nav-link {
     text-transform: uppercase;
     font-size: 0.9em;
+    padding: 10px 0;
 }
 
+.footer__year {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
