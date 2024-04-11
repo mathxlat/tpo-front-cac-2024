@@ -1,5 +1,6 @@
-@import "fonts.css";
+@import "bootstrap/css/bootstrap.css";
 @import "normalize.css";
+@import "fonts.css";
 
 :root {
     color-scheme: dark;
@@ -259,6 +260,7 @@ body:has(.toggle-menu:checked) {
 }
 
 .card-title {
+    color: var(--primary-color);
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: 600;
@@ -267,6 +269,7 @@ body:has(.toggle-menu:checked) {
 }
 
 .card-description {
+    color: var(--primary-color);
     font-size: 0.8em;
     text-shadow: 0 0 10px #0009;
     display: -webkit-box; 
