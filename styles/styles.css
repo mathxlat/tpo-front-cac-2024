@@ -200,6 +200,24 @@ body:has(.toggle-menu:checked) {
     border-radius: 4px;
     border: 1px solid #0009;
     background-color: #0009;
+    animation: animate-in-and-out linear;
+    animation-range: entry 5% cover 25% exit 5%;
+    animation-timeline: view();
+}
+
+@keyframes animate-in-and-out {
+    entry 0%  {
+        opacity: 0;
+    }
+    entry 100%  {
+        opacity: 1;
+    }
+    exit 0% {
+        opacity: 1;
+    }
+    exit 100% {
+        opacity: 0;
+    }
 }
 
 .card-picture {
