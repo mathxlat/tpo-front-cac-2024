@@ -147,7 +147,7 @@ body:has(.toggle-menu:checked) {
     }
 
     .footer__nav-link {
-        transition: filter .1s;
+        transition: filter .15s;
     }
 
     .footer__nav-link:hover {
@@ -155,7 +155,7 @@ body:has(.toggle-menu:checked) {
     }
 
     .header__nav-user {
-        transition: filter .1s;
+        transition: filter .15s;
     }
 
     .header__nav-user:hover {
