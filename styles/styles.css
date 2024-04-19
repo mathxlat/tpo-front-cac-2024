@@ -177,36 +177,6 @@ body:has(.toggle-menu:checked) {
     margin: auto;
 }
 
-.main__slider-content {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    border-radius: 4px;
-    overflow: scroll;
-    gap: 5px;
-    scroll-snap-type: x mandatory;
-    overscroll-behavior: contain;
-    scroll-behavior: smooth;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) var(--secondary-color);
-    scrollbar-arrow-color: var(--secondary-color);
-}
-
-.main__slider-picture {
-    flex: 0 0 100%;
-    left: 0;
-    scroll-snap-stop: always;
-    scroll-snap-align: center;
-}
-
-.main__slider-img {
-    width: 100%;
-    object-fit: cover;
-}
-
 .main__movies-title {
     font-size: 1.1em;
     font-weight: 800;
