@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="stylesheet" href="./contact.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../assets/favicon/site.webmanifest">
+        <title>Cine/Contact</title>
+        <meta
+            name="description"
+            content="El mejor cine para disfrutar de tus películas favoritas."
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__wrapper">
+                <a href="../" class="header__logo-container">
+                    <h1 class="header__logo">CINE</h1>
+                </a>
+                <nav class="header__nav">
+                    <input
+                        type="checkbox"
+                        id="toggle-menu"
+                        class="toggle-menu"
+                    />
+                    <label
+                        for="toggle-menu"
+                        class="toggle-menu-button"
+                        aria-label="Alternar menu"
+                    >
+                        <i class="toggle-menu-hamburger" aria-label="Menu"></i>
+                    </label>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#premiere" class="header__nav-link">
+                                Estrenos
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#coming-soon" class="header__nav-link">
+                                Próximamente
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#cinemas" class="header__nav-link">
+                                Cines
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="../shop" class="header__nav-link">
+                                Tienda
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="../login" class="header__nav-user">
+                        <img
+                            src="../assets/icons/circle-user.svg"
+                            alt="Usuario"
+                            aria-label="Usuario"
+                        />
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="main__login">
+                <h2 class="main__movies-title">Contacto</h2>
+                <div class="form-container">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Tema de contacto</label>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Ingrese el tema de contacto...">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su correo electrónico...">
+                        </div>
+                        <div class="form-group">
+                            <label for="reason" class="form-label">Motivo</label>
+                            <input type="text" name="reason" id="reason" class="form-control" placeholder="Ingrese el motivo...">
+                        </div>
+                        <div class="form-group">
+                            <label for="matter" class="form-label">Asunto</label>
+                            <input type="text" name="matter" id="matter" class="form-control" placeholder="Ingrese el asunto...">
+                        </div>
+                        <div class="form-group">
+                            <label for="description" class="form-label">Descripción</label>
+                            <textarea name="description" id="description" cols="10" rows="5" class="form-control" placeholder="Ingrese una descripción..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="attachments" class="form-label">Archivos adjuntos</label>
+                            <input type="file" name="attachments" id="attachments" class="form-control" multiple>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label for="terms" class="form-label">Acepto términos y condiciones</label>
+                            <input type="checkbox" name="terms" id="terms" class="form-check-input">
+                        </div>
+                        <button class="form-button">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__border-top"></div>
+            <div class="footer-content">
+                <p class="footer__year">2024</p>
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="../assets/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/icons/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/icons/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
