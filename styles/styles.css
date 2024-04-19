@@ -24,8 +24,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    /* background-color: var(--secondary-color); */
     backdrop-filter: blur(100px) brightness(.2) grayscale(0.5) hue-rotate(20deg) saturate(5) sepia(.4);
+    -webkit-backdrop-filter: blur(100px) brightness(.2) grayscale(0.5) hue-rotate(20deg) saturate(5) sepia(.4);
 }
 
 .header__wrapper {
