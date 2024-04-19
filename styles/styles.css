@@ -172,6 +172,7 @@ body:has(.toggle-menu:checked) {
 
 .main-content {
     width: 100%;
+    min-height: 75dvh;
     padding: 0 10px;
     max-width: 1024px;
     margin: auto;
