@@ -1,0 +1,58 @@
+.card-shop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 10px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.card-shop {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-shop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card-shop-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.card-shop-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.05em;
+}
+
+.card-shop-description {
+    font-size: 0.9em;
+}
+
+.card-shop-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.card-shop-button {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-style: none;
+    border: 2px solid #EFEFEF;
+    background-color: #EFEFEF;
+    color: #121212;
+    padding: 5px 0;
+    border-radius: 4px;
+}
