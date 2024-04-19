@@ -201,7 +201,6 @@ body:has(.toggle-menu:checked) {
     border: 1px solid #0009;
     background-color: #0009;
     animation: animate-in-and-out linear;
-    animation-range: entry 5% cover 25% exit 5%;
     animation-timeline: view();
 }
 
