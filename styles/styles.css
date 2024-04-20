@@ -57,6 +57,7 @@ body {
     display: flex;
     justify-content: end;
     width: 21px;
+    margin-top: 5px;
 }
 
 .toggle-menu-hamburger::before {
