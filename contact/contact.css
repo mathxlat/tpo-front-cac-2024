@@ -1,6 +1,5 @@
 .form-group {
     position: relative;
-    padding-bottom: 18px;
 }
 
 .error {
@@ -11,6 +10,7 @@
     font-weight: 600;
 }
 
-.error.activo {
+.form-group:has(.error.activo) {
     text-transform: uppercase;
+    padding-bottom: 32px;
 }
