@@ -1,0 +1,16 @@
+.form-group {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.error {
+    color: #bd1a0f;
+    position: absolute;
+    bottom: 0;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.error.activo {
+    text-transform: uppercase;
+}
