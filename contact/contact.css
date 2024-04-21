@@ -14,3 +14,10 @@
     text-transform: uppercase;
     padding-bottom: 32px;
 }
+
+@media (width >= 650px) {
+    .form-group:has(.error.activo) {
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+}
