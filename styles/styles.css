@@ -347,6 +347,7 @@ body:has(.toggle-menu:checked) {
 .form-group {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .form-label {
@@ -426,4 +427,23 @@ body:has(.toggle-menu:checked) {
 
 textarea {
     resize: none;
+}
+
+.error {
+    color: #bd1a0f;
+    position: absolute;
+    bottom: 0;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.form-group:has(.error.activo) {
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+@media (width >= 650px) {
+    .form-group:has(.error.activo) {
+        padding-bottom: 20px;
+    }
 }

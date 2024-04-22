@@ -1,3 +1,5 @@
+import { showError, handleMultipleInputs } from "../helpers/form-validation.js";
+
 const form = document.querySelector("#form");
 
 const subject = document.querySelector("#subject");
@@ -53,42 +55,6 @@ const attachmentsErrorMessages = {
 
 const termsErrorMessages = {
     valueMissing: "El campo de acepto términos y condiones es obligatorio.",
-};
-
-const ERROR_CLASS = "error";
-const ACTIVE_ERROR_CLASS = "error activo";
-
-const showError = ({ htmlInputElement, htmlSpanElement, errorMessages }) => {
-    if (htmlInputElement.validity.valueMissing) {
-        htmlSpanElement.textContent = errorMessages.valueMissing;
-    } else if (htmlInputElement.validity.typeMismatch) {
-        htmlSpanElement.textContent = errorMessages.typeMismatch;
-    } else if (htmlInputElement.validity.tooShort) {
-        htmlSpanElement.textContent = errorMessages.tooShort.replace("{{minLength}}", htmlInputElement.minLength);
-    } else if (htmlInputElement.validity.patternMismatch) {
-        htmlSpanElement.textContent = errorMessages.patternMismatch;
-    }
-
-    htmlSpanElement.className = ACTIVE_ERROR_CLASS;
-};
-
-const createInputListenerWithConfig = ({
-    htmlInputElement,
-    htmlSpanElement,
-    errorMessages,
-}) => {
-    htmlInputElement.addEventListener("input", (event) => {
-        if (htmlInputElement.validity.valid) {
-            htmlSpanElement.textContent = "";
-            htmlSpanElement.className = ERROR_CLASS;
-        } else {
-            showError({ htmlInputElement, htmlSpanElement, errorMessages });
-        }
-    });
-};
-
-const handleMultipleInputs = (inputs) => {
-    inputs.forEach(createInputListenerWithConfig);
 };
 
 const inputs = [
