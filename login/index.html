@@ -68,6 +68,9 @@
             </div>
         </header>
         <main class="main-content">
+            <section class="main__hero">
+                <img src="../assets/img/hero/planeta-simios.webp" alt="Imagen de la película el planeta de los simios" class="hero">
+            </section>
             <section class="main__login">
                 <h2 class="main__movies-title">Login</h2>
                 <div class="form-container">
@@ -80,6 +83,11 @@
                         <div class="form-group">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" name="password" id="password" class="form-control" placeholder="Ingrese su contraseña..." required minlength="8">
+                            <span class="error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label for="remember" class="form-label">Recordar</label>
+                            <input type="checkbox" name="remember" id="remember" class="form-check-input" required>
                             <span class="error" aria-live="polite"></span>
                         </div>
                         <button class="form-button">Iniciar sesión</button>
