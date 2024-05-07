@@ -442,3 +442,8 @@ textarea {
     }
 }
 
+@starting-style {
+    .toggle-menu:checked ~ .header__nav-list {
+        opacity: 0;
+    }
+}
