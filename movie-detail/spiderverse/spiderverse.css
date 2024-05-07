@@ -1,6 +1,6 @@
-@import "../../styles/fonts.css";
-@import "../../styles/bootstrap/css/bootstrap.css";
-@import "../../styles/normalize.css";
+@import "./../../styles/fonts.css";
+@import "./../../styles/bootstrap/css/bootstrap.css";
+@import "./../../styles/normalize.css";
 
 :root {
     color-scheme: dark;
@@ -61,11 +61,11 @@ body {
 }
 
 .toggle-menu-hamburger::before {
-    content: url("../../assets/icons/menu.svg");
+    content: url("./../../assets/icons/menu.svg");
 }
 
 .toggle-menu:checked ~ .toggle-menu-button > .toggle-menu-hamburger::before {
-    content: url("../../assets/icons/x-mark.svg");
+    content: url("./../../assets/icons/x-mark.svg");
 }
 
 .header__nav-list {
