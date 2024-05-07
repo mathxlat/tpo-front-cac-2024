@@ -9,6 +9,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="../assets/favicon/site.webmanifest">
+        <script type="module" src="./form-validation-contact.js"></script>
         <title>Cine/Contact</title>
         <meta
             name="description"
@@ -67,42 +68,51 @@
             </div>
         </header>
         <main class="main-content">
+            <section class="main__hero">
+                <img src="../assets/img/hero/planeta-simios.webp" alt="Imagen de la película el planeta de los simios" class="hero">
+            </section>
             <section class="main__login">
                 <h2 class="main__movies-title">Contacto</h2>
                 <div class="form-container">
-                    <form class="form">
+                    <form class="form" id="form" novalidate>
                         <div class="form-group">
                             <label for="subject" class="form-label">Tema de contacto</label>
-                            <select class="form-select" name="subject" id="subject" aria-label="Seleccionar tema de contacto">
-                                <option selected>Selecciona un tema de contacto</option>
+                            <select class="form-select" name="subject" id="subject" aria-label="Seleccionar tema de contacto" required>
                                 <option value="1">Consultas</option>
                                 <option value="2">Reclamos</option>
                                 <option value="3">Problemas</option>
                             </select>
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-group">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su correo electrónico...">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su correo electrónico..." required pattern="^\S+@\S+\.\S+$">
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-group">
                             <label for="reason" class="form-label">Motivo</label>
-                            <input type="text" name="reason" id="reason" class="form-control" placeholder="Ingrese el motivo...">
+                            <input type="text" name="reason" id="reason" class="form-control" placeholder="Ingrese el motivo..." required pattern="^[a-zA-Z0-9 ]+$" minlength="5">
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-group">
                             <label for="matter" class="form-label">Asunto</label>
-                            <input type="text" name="matter" id="matter" class="form-control" placeholder="Ingrese el asunto...">
+                            <input type="text" name="matter" id="matter" class="form-control" placeholder="Ingrese el asunto..." required pattern="^[a-zA-Z0-9 ]+$" minlength="5">
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-group">
                             <label for="description" class="form-label">Descripción</label>
-                            <textarea name="description" id="description" cols="10" rows="5" class="form-control" placeholder="Ingrese una descripción..."></textarea>
+                            <textarea name="description" id="description" cols="10" rows="5" class="form-control" placeholder="Ingrese una descripción..." required></textarea>
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-group">
                             <label for="attachments" class="form-label">Archivos adjuntos</label>
-                            <input type="file" name="attachments" id="attachments" class="form-control" multiple>
+                            <input type="file" name="attachments" id="attachments" class="form-control" multiple required>
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-group checkbox-group">
                             <label for="terms" class="form-label">Acepto términos y condiciones</label>
-                            <input type="checkbox" name="terms" id="terms" class="form-check-input">
+                            <input type="checkbox" name="terms" id="terms" class="form-check-input" required>
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <button class="form-button">Enviar</button>
                     </form>

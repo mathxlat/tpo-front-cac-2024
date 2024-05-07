@@ -335,12 +335,13 @@ body:has(.toggle-menu:checked) {
 .form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .form-label {
@@ -352,46 +353,46 @@ body:has(.toggle-menu:checked) {
 .form-control {
     background-color: transparent;
     border-radius: 4px;
-    color: #efefef;
-    border-color: #efefef;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
     font-size: .9em;
     font-weight: 500;
 }
 
 .form-control::placeholder {
-    color: #efefef;
+    color: var(--primary-color);
     opacity: 0.7;
 }
 
 .form-control:focus {
-    background-color: #efefef;
+    background-color: var(--primary-color);
     box-shadow: none;
-    border-color: #efefef;
+    border-color: var(--primary-color);
 }
 
 .form-control:focus::placeholder {
-    color: #121212;
+    color: var(--secondary-color);
 }
 
 .form-select {
     background-color: transparent;
     border-radius: 4px;
-    color: #efefef;
-    border-color: #efefef;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
     font-size: .9em;
     font-weight: 500;
 }
 
 .form-select::placeholder {
-    color: #efefef;
+    color: var(--primary-color);
     opacity: 0.7;
 }
 
 .form-select:focus {
-    background-color: #efefef;
+    background-color: var(--primary-color);
     box-shadow: none;
-    border-color: #efefef;
-    color: #121212;
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .form-button {
@@ -400,8 +401,8 @@ body:has(.toggle-menu:checked) {
     padding: 6px;
     border: none;
     border-radius: 4px;
-    color: #121212;
-    background-color: #efefef;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -415,9 +416,29 @@ body:has(.toggle-menu:checked) {
 }
 
 .checkbox-group label {
-    margin-bottom: -2.4px;
+    margin-bottom: -3.3px;
 }
 
 textarea {
     resize: none;
 }
+
+.error {
+    color: #bd1a0f;
+    position: absolute;
+    bottom: 0;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.form-group:has(.error.activo) {
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+@media (width >= 650px) {
+    .form-group:has(.error.activo) {
+        padding-bottom: 20px;
+    }
+}
+
