@@ -1,6 +1,6 @@
-@import "fonts.css";
-@import "bootstrap/css/bootstrap.css";
-@import "normalize.css";
+@import "./../../styles/fonts.css";
+@import "./../../styles/bootstrap/css/bootstrap.css";
+@import "./../../styles/normalize.css";
 
 :root {
     color-scheme: dark;
@@ -61,11 +61,11 @@ body {
 }
 
 .toggle-menu-hamburger::before {
-    content: url("../assets/icons/menu.svg");
+    content: url("./../../assets/icons/menu.svg");
 }
 
 .toggle-menu:checked ~ .toggle-menu-button > .toggle-menu-hamburger::before {
-    content: url("../assets/icons/x-mark.svg");
+    content: url("./../../assets/icons/x-mark.svg");
 }
 
 .header__nav-list {
@@ -100,6 +100,7 @@ body {
 body:has(.toggle-menu:checked) {
     overflow: hidden;
 }
+
 
 @media (width < 500px) {
     .header__nav-list {
@@ -182,10 +183,10 @@ body:has(.toggle-menu:checked) {
 
 .card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 10px;
-    margin: auto;
-    padding: 10px 0;
+    grid-template-columns: repeat(2,-1fr);
+    gap: 20px;
+    margin:auto;
+    padding: 20px 0;
 }
 
 .card {
@@ -255,14 +256,10 @@ body:has(.toggle-menu:checked) {
 }
 
 .card-description {
-    color: var(--primary-color);
-    font-size: 0.8em;
-    text-shadow: 0 0 10px #0009;
-    display: -webkit-box; 
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 3; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    display: grid;
+    font-size: 1em;
+    grid-column: 2 / 2;
+    text-align: justify;
 }
 
 .footer {
@@ -335,13 +332,12 @@ body:has(.toggle-menu:checked) {
 .form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 15px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 .form-label {
@@ -353,46 +349,46 @@ body:has(.toggle-menu:checked) {
 .form-control {
     background-color: transparent;
     border-radius: 4px;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #efefef;
+    border-color: #efefef;
     font-size: .9em;
     font-weight: 500;
 }
 
 .form-control::placeholder {
-    color: var(--primary-color);
+    color: #efefef;
     opacity: 0.7;
 }
 
 .form-control:focus {
-    background-color: var(--primary-color);
+    background-color: #efefef;
     box-shadow: none;
-    border-color: var(--primary-color);
+    border-color: #efefef;
 }
 
 .form-control:focus::placeholder {
-    color: var(--secondary-color);
+    color: #121212;
 }
 
 .form-select {
     background-color: transparent;
     border-radius: 4px;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #efefef;
+    border-color: #efefef;
     font-size: .9em;
     font-weight: 500;
 }
 
 .form-select::placeholder {
-    color: var(--primary-color);
+    color: #efefef;
     opacity: 0.7;
 }
 
 .form-select:focus {
-    background-color: var(--primary-color);
+    background-color: #efefef;
     box-shadow: none;
-    border-color: var(--primary-color);
-    color: var(--secondary-color);
+    border-color: #efefef;
+    color: #121212;
 }
 
 .form-button {
@@ -401,8 +397,8 @@ body:has(.toggle-menu:checked) {
     padding: 6px;
     border: none;
     border-radius: 4px;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: #121212;
+    background-color: #efefef;
     font-weight: 600;
 }
 
@@ -416,34 +412,9 @@ body:has(.toggle-menu:checked) {
 }
 
 .checkbox-group label {
-    margin-bottom: -3.3px;
+    margin-bottom: -2.4px;
 }
 
 textarea {
     resize: none;
-}
-
-.error {
-    color: #bd1a0f;
-    position: absolute;
-    bottom: 0;
-    font-size: .8em;
-    font-weight: 600;
-}
-
-.form-group:has(.error.activo) {
-    text-transform: uppercase;
-    padding-bottom: 32px;
-}
-
-@media (width >= 650px) {
-    .form-group:has(.error.activo) {
-        padding-bottom: 20px;
-    }
-}
-
-@starting-style {
-    .toggle-menu:checked ~ .header__nav-list {
-        opacity: 0;
-    }
 }
