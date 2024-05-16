@@ -1,6 +1,6 @@
 # Trabajo Práctico Obligatorio - Front - Codo A Codo 2024
 
-Esta es una pagina web de un cine realizada por estudiantes de CODO a CODO para el curso de Programación FULLSTACK - PYTHON 2024.
+Esta es una pagina web de un cine realizada por estudiantes del GRUPO 4 de la Comisión 24182 de CODO a CODO para el curso de Programación FULLSTACK - PYTHON 2024.
 
 Es una pagina sencilla que cuenta con diferentes secciones para: Estrenos, Proximamente, Cines, Tienda, Usuario y Redes Sociales.
 
