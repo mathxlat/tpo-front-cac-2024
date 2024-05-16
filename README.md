@@ -10,6 +10,7 @@ Es una pagina sencilla que cuenta con diferentes secciones para: Estrenos, Proxi
 El link del demo:
 
 https://mathxlat.github.io/tpo-front-cac-2024/
+
 ## Capturas
 
 Inicio
